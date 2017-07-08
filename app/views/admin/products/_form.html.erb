@@ -1,6 +1,6 @@
-<%= simple_form_for @product do |f| %>
+<%= simple_form_for admin_product_url(@product) do |f| %>
 <div class="form-product">
-  <%= f.input :title,label "标题",  input_html: {class: "form-control"} %>
+  <%= f.input :title, input_html: {class: "form-control"} %>
   <%= f.input :description, input_html: {class: "form-control"} %>
   <%= f.input :quantity, input_html: {class: "form-control"} %>
   <%= f.input :price, input_html: {class: "form-control"} %>
