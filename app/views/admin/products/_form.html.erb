@@ -1,27 +1,9 @@
-<%= form_for @product do |f| %>
-
+<%= simple_form_for @product do |f| %>
 <div class="form-product">
-    <div class="form-product string optional">
-        <%= f.label "商品", :class => "string optional control-label" %>
-        <%= f.text_field :title, :class => "string optional form-control" %>
-    </div>
-
-    <div class="form-product string optional">
-        <%= f.label "描述", :class => "string optional control-label" %>
-        <%= f.text_area :description, :class => "string optional form-control" %>
-    </div>
-
-    <div class="form-product string optional">
-        <%= f.label "数量", :class => "string optional control-label" %>
-        <%= f.text_field :quantity, :class => "string optional form-control" %>
-    </div>
-
-    <div class="form-product string optional">
-        <%= f.label "价格", :class => "string optional control-label" %>
-        <%= f.text_field :price, :class => "string optional form-control" %>
-    </div>
-
-
+  <%= f.input :title,label "标题",  input_html: {class: "form-control"} %>
+  <%= f.input :description, input_html: {class: "form-control"} %>
+  <%= f.input :quantity, input_html: {class: "form-control"} %>
+  <%= f.input :price, input_html: {class: "form-control"} %>
 </div>
-<%= f.submit "提交", class: "btn btn-primary", data: { disable_with: "Submiting..." } %>
+<%= f.submit "Submit", class: "btn btn-primary", data: {disable_with: "Submiting..."} %>
 <% end %>
