@@ -17,11 +17,13 @@ end
 resources :carts do
   collection do
     delete :clean
-    post :checkout 
+    post :checkout
   end
 end
 
 resources :cart_items
+
+resources :orders 
 
 root 'products#index'
 
