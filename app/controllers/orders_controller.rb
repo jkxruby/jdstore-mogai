@@ -7,7 +7,6 @@ def create
   @order.total = current_cart.total_price
 
   if @order.save
-
     current_cart.cart_items.each do |cart_item|
         product_list = ProductList.new
         product_list.order = @order
