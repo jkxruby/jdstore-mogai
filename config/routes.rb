@@ -13,7 +13,7 @@ namespace :admin do
       post :shipped
       post :return
     end
-  end 
+  end
 end
 
 resources :products do
@@ -35,6 +35,7 @@ resources :orders do
   member do
     post :pay_with_alipay
     post :pay_with_wechat
+    post :apply_to_cancel
   end
 end
 
