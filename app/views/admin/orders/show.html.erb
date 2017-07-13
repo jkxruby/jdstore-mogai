@@ -1,7 +1,9 @@
 <div class="row">
   <div class="col-md-12">
 
-    <h2> 订单明细 (<%= render_order_paid_state(@order) %>) </h2>
+    <h2>
+      订单明细 (<%= render_order_paid_state(@order) %>)
+    </h2>
 
     <%= render "admin/orders/state_option", order: @order %>
 
@@ -15,62 +17,68 @@
       <tbody>
 
         <% @product_lists.each do |product_list| %>
-          <tr>
-            <td>
-              <%= product_list.product_name %>
-            </td>
-            <td>
-              <%= product_list.product_price %>
-            </td>
-          </tr>
+        <tr>
+          <td>
+            <%= product_list.product_name %>
+          </td>
+          <td>
+            <%= product_list.product_price %>
+          </td>
+        </tr>
         <% end %>
       </tbody>
-          </table>
+    </table>
 
+    <div class="total clearfix">
+      <span class="pull-right">
+        总计
+        <%= @order.total %>
+        CNY
+      </span>
+    </div>
 
+    <hr>
 
-          <div class="total clearfix">
-            <span class="pull-right">
-              总计 <%= @order.total %> CNY
-            </span>
-          </div>
+    <h2>
+      寄送资讯
+    </h2>
 
-           <hr>
+    <table class="table table-striped table-bordered">
+      <tbody>
+        <tr>
+          <td>
+            订购人
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= @order.billing_name %>
+            -
+            <%= @order.billing_address %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            收件人
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= @order.shipping_name %>
+            -
+            <%= @order.shipping_address %>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-           <h2> 寄送资讯 </h2>
-
-           <table class="table table-striped table-bordered">
-            <tbody>
-              <tr>
-                <td>
-                  订购人
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <%= @order.billing_name %> - <%= @order.billing_address %>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  收件人
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <%= @order.shipping_name %> - <%= @order.shipping_address %>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <% if !@order.is_paid? %>
-          <div class="group pull-right">
-     <%= link_to("以支付宝支付", pay_with_alipay_order_path(@order.token), :method => :post, :class => "btn btn-danger") %>
-     <%= link_to("以微信支付", pay_with_wechat_order_path(@order.token), :method => :post, :class => "btn btn-danger") %>
-     </div>
-     <% else %>
-     <p class="text-center">此订单已完成付款</p>
-     <% end %>
-        </div>
-      </div>
+    <% if !@order.is_paid? %>
+    <div class="group pull-right">
+      <%= link_to("以支付宝支付", pay_with_alipay_order_path(@order.token), :method => :post, :class => "btn btn-danger") %>
+      <%= link_to("以微信支付", pay_with_wechat_order_path(@order.token), :method => :post, :class => "btn btn-danger") %>
+    </div>
+  <% else %>
+    <p class="text-center">此订单已完成付款</p>
+    <% end %>
+  </div>
+</div>
