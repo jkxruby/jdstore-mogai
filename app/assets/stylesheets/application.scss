@@ -21,7 +21,7 @@
 
 
 .jumbotron {
-  background-image: url('head.jpeg');
+  background-image: url('head.jpeg');   //大图链接
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 110px;
@@ -50,6 +50,7 @@
     color: white;
   }
 
+// 导航栏的设计
   .navbar-default {
        background-color: #212121;  //背景颜色
 
@@ -66,13 +67,14 @@
      .navbar-default .navbar-brand {
        color: #EF6C00; //字体颜色
 
+
        padding: 10px 15px; //上下10px，左右15px
        line-height: 30px; //文字行高
      }
 
      .navbar-default .navbar-brand:hover,
      .navbar-default .navbar-brand:focus {
-       color: #FF6F00; //鼠标放置在链接上的文字颜色
+       color: #red; //鼠标放置在链接上的文字颜色
 
        background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
      }
@@ -93,7 +95,7 @@
      .navbar-default .navbar-nav > .active > a:focus {
        color: #FF6F00;
 
-       background-color: #FFE0B2;
+       background-color: #green;
 
      }
 
@@ -105,3 +107,26 @@
        color: #212121;
 
      }
+//让大图满屏
+ .container-fluid .jumbotron{
+   padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
+   margin: 0   0 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+   border-radius: 0;//圆角为0
+ }
+
+//替换按钮
+ .btn-danger {
+     color: #fff;//字体颜色
+
+     background-color: #EF6C00;//背景颜色
+
+     border-color: #EF6C00;//边框颜色
+
+ }
+
+ .btn-danger:hover {
+     background-color: #red;//鼠标放置在btn上的背景颜色
+
+     border-color: #white;//鼠标放置在btn上的边框颜色
+
+ }
