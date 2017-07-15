@@ -20,6 +20,13 @@
 @import "font-awesome";
 
 
+// 下面代码自己添加的
+.container {
+  margin-top:40px
+}
+
+
+
 .jumbotron {
   background-image: url('head.jpeg');   //大图链接
   background-repeat: no-repeat;
@@ -149,7 +156,7 @@
 
    }
      .navbar-header {
-       margin-left: 9%;
+       margin-left: 4%;
        a {
          font-size: 20px;
          color: #fff;
