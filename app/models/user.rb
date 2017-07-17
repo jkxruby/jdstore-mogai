@@ -8,6 +8,15 @@ def admin?
   is_admin
 end
 
-has_many :orders 
+def display_name
+  if self.username.present?
+    self.username
+  else
+    self.email.split("@").first
+  end
+end
+
+
+has_many :orders
 
 end
