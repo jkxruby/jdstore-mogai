@@ -63,6 +63,7 @@
                       <li>
                         <%= link_to(content_tag(:i, "个人订单列表",class: "fa fa-list-alt"), account_orders_path)%>
                       </li>
+                      <li><%= link_to "账号中心", edit_account_user_path(current_user) %></li>
                         <li> <%= link_to(content_tag(:i, '登出', :class => "fa fa-sign-out"), destroy_user_session_path, method: :delete) %> </li>
                     </ul>
                   </li>

@@ -40,6 +40,7 @@ resources :orders do
 end
 
 namespace :account do
+  resources :users 
   resources :orders
 end
 
