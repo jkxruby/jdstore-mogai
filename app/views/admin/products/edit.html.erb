@@ -5,10 +5,10 @@
 
   <%= simple_form_for [:admin, @product] do |f| %>
   <div class="form-product">
-    <%= f.input :title, input_html: {class: "form-control"} %>
-    <%= f.input :description, input_html: {class: "form-control"} %>
-    <%= f.input :quantity, input_html: {class: "form-control"} %>
-    <%= f.input :price, input_html: {class: "form-control"} %>
+    <%= f.input :title, :label => "标题", input_html: {class: "form-control"} %>
+    <%= f.input :description, :label => "描述", input_html: {class: "form-control"} %>
+    <%= f.input :quantity, :label => "数量", input_html: {class: "form-control"} %>
+    <%= f.input :price, :label => "价格", input_html: {class: "form-control"} %>
   </div>
 
 
