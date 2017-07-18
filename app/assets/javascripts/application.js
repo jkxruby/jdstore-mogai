@@ -19,5 +19,14 @@
 //= require bootstrap-sprockets
 
 
-
 //= require_tree .
+
+
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 100 ){
+    $('#navbar').addClass('show_bgcolor')
+  } else {
+    $('#navbar').removeClass('show_bgcolor')
+  }
+
+})
