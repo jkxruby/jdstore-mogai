@@ -20,14 +20,14 @@
 @import "font-awesome";
 
 
-// 下面代码自己添加的
 
-//......
+
+/*  welcome首页设计  */
 
  .container-fluid .jumbotron {
-  background-image: url('head.jpeg');   //大图链接
+  background-image: url('head.jpg');   //大图链接
   background-repeat: no-repeat;
-  margin: 0   -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+  margin: 50px -15px 80px -15px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
   border-radius: 0;//圆角为0
   background-size: cover;
   border-radius: 10;
@@ -143,7 +143,7 @@
  .navbar-default {
    margin-bottom: 0;
    border-radius: 0;
-   background: rgba(0,0,0,0.3);
+   background: rgba(61,61,61,0.8);
    &.show_bgcolor {
      background-color: #02061A;
 
@@ -184,29 +184,46 @@
   }
 
 
+/* login/sign-up */
+ .facepanel{
+  background-image: image_url("head.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:50px -30px 730px -30px;
 
 
-//下面代码为navbar效果
-// 类别
-//     .tab-nav{
-//       float: left;
-//       margin-top: 56px;
-//       line-height: 1;
-//       height: 30px;
-//       position: relative;
-//       width: 100%;
-//     }
-//     .nav-item {
-//     float: left;
-//     padding: 6px 30px 0;
-//     font-size: 14px;
-// }
-// // 解决冲突，加上父元素
-// .tab-nav li {
-//     display: list-item;
-//     text-align: -webkit-match-parent;
-// }
-//  .first {
-//      margin-left: 12px;
-//      padding-left: 30px;
-//  }
+  .login-page, .sign-up-page {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    span {
+      display: inline-block;
+      margin-right: 15px;
+    }
+    form {
+      max-width: 480px;
+      padding: 15px 35px 45px;
+      margin: 0 auto;
+      background-color: #fff;
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 5px;
+      box-shadow: inset 0 1px 1px #9daaaf, 0 0 8px #c1c5c1;
+      h2 {
+        margin-bottom: 30px;
+      }
+      .form-control {
+        position: relative;
+        font-size: 16px;
+        height: auto;
+        padding: 10px;
+        transition: 1s;
+        @include box-sizing(border-box);
+        &:focus {
+          box-shadow: 1px 1px #fff;
+          border-color: #red;
+          z-index: 2;
+        }
+      }
+    }
+
+  }
+}
