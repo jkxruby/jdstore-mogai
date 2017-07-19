@@ -143,9 +143,9 @@
  .navbar-default {
    margin-bottom: 0;
    border-radius: 0;
-   background: rgba(61,61,61,0.2);
+   background: rgba(61,61,61,0.3);
    &.show_bgcolor {
-     background-color: rgba(61,61,61,0.5);
+     background-color: rgba(34,112,232,0.5);
 
    }
      .navbar-header {
@@ -261,9 +261,8 @@
 
 
 /*  welcome#index中我们优势  */
-  //共同部分，短线
 
-  .welcome-short-line {
+  .welcome-short-line {  //中间横线
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -287,7 +286,6 @@
     background-size: cover;
     background: #ececec;
   }
-  //定义了划分三块
 
   .welcome-part1-01 .welcome-part1-block {
     display: block;
@@ -325,6 +323,7 @@
     margin-left: 20px;
     margin-top: 40px;
     float: left;
+
   }
 
   .welcome-part1-01-title {
