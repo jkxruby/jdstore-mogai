@@ -17,6 +17,9 @@ namespace :admin do
 end
 
 resources :products do
+  collection do
+    get :search
+  end 
   member  do
     post :add_to_cart
   end
@@ -40,7 +43,7 @@ resources :orders do
 end
 
 namespace :account do
-  resources :users 
+  resources :users
   resources :orders
 end
 

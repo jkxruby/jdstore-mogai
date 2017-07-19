@@ -1,0 +1,40 @@
+<div>
+  <br>
+  <% if @query_string.blank? %>
+  <br><br><br>
+  <h1><div class="search-info-title">
+    🐖🐷搜索🔍为空，请输入正确内容
+  </div></h1>
+
+  <% elsif @products.blank? %>
+  <br>
+  <br>
+  <h1 class="search-info-title">🐷🐷🐷请输入正确的关键词</h1>
+<% else %>
+  <h2 class="search-info-title">
+    有关"<%= @query_string %>"的商品信息
+  </h2>
+  <div class="search-result">
+
+    <div class="row groups-show0"></div>
+    <div class="group-table">
+      <% @products.each do |product| %>
+      <div class="row groups-show">
+
+        <div class="col-md-12 col-lg-9 col-lg-offset-1">
+
+          <div class="pull-right">
+            发布时间：<%= product.created_at.to_date %>
+          </div>
+          <p ><%= link_to(render_highlight_content(product,@query_string),product_path(product)) %></p>
+
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="text-center">
+    <%= will_paginate(@products, renderer: BootstrapPagination::Rails) %>
+  </div>
+  <% end %>
+</div>

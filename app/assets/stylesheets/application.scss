@@ -27,7 +27,7 @@
  .container-fluid .jumbotron {
   background-image: url('head.jpg');   //大图链接
   background-repeat: no-repeat;
-  margin: 0 -15px 80px -15px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+  margin: 0 -30px 80px -31px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
   border-radius: 0;//圆角为0
   background-size: cover;
   border-radius: 10;
@@ -189,7 +189,7 @@
   background-image: image_url("head.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin:0 -30px 730px -30px;
+  margin:0 -30px 730px -31px;
 
 
   .login-page, .sign-up-page {
@@ -227,3 +227,34 @@
 
   }
 }
+
+
+
+
+
+/* 美化导航栏搜索*/
+
+.search-info-title {
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+  color: #0d6ded;
+  font-size: 20px;
+  text-align: center;
+}
+ .navbar-left {
+    float: initial;
+     margin-top: 8px; //调整导航条上搜索框上下的距离
+    width: 200px; //调整搜索框的长度
+ }
+
+ .search-id {
+    width: 200px;
+    padding-top: 7px;
+ }
+
+ .page-wrap {
+    margin-top: 50px;//搜索页面距离顶部的距离
+ }
+
+ .input-group {
+    left: 13px;//搜索栏距离左边距离
+  }

@@ -42,6 +42,9 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
+    annotate (2.7.2)
+      activerecord (>= 3.2, < 6.0)
+      rake (>= 10.4, < 13.0)
     arel (7.1.1)
     ast (2.3.0)
     autoprefixer-rails (7.1.1.2)
@@ -219,6 +222,7 @@ PLATFORMS
 
 DEPENDENCIES
   aasm
+  annotate
   bootstrap-sass
   byebug
   carrierwave
