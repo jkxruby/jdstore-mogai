@@ -331,3 +331,105 @@
     font-weight: bold;
     text-align: center;
   }
+
+  /* 客户反馈 */
+
+  .welcome-part3 {
+    display: block;
+    margin: -80px -30px 80px -30px;
+    height: 630px;
+    min-width: 960px;
+    background-size: cover;
+    background: #ececec;
+  }
+
+  .welcome-part3-box {
+    display: block;
+    background: white;
+    border-style: none;
+    border-radius: 0;
+    top: 20%;
+    z-index: 38;
+    width: 300px;
+    height: 330px;
+    position: relative;
+    margin-left: 20px;
+    float: left;
+  }
+
+  .welcome-part3-text1 {
+    display: block;
+    font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0);
+    border-style: none;
+    border-radius: 0;
+    left: 32px;
+    top: 81px;
+    width: 235px;
+    height: 78px;
+    position: absolute;
+    text-align: left;
+  }
+
+  .welcome-quote-image {
+    display: block;
+    background: rgba(255, 255, 255, 0);
+    left: 32px;
+    top: 41px;
+    z-index: 49;
+    position: absolute;
+  }
+
+  .welcome-part3-box-image {
+    display: block;
+    background: rgba(255, 255, 255, 0);
+    background-image: url("http://imglf1.ph.126.net/gb9DEw_k_RHc2FKBkBYyrQ==/6619555878956744632.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    border-style: none;
+    border-radius: 146px;
+    left: 32px;
+    top: 180px;
+    z-index: 47;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+  }
+
+  .welcome-part3-text2 {
+    display: block;
+    background: rgba(255, 255, 255, 0);
+    border-style: none;
+    border-radius: 0;
+    left: 32px;
+    top: 256px;
+    z-index: 46;
+    width: 87px;
+    height: 26px;
+    position: absolute;
+    text-align: left;
+  }
+
+  .welcome-part3-text3 {
+    display: block;
+    background: rgba(255, 255, 255, 0);
+    border-style: none;
+    border-radius: 0;
+    left: 32px;
+    top: 276px;
+    z-index: 45;
+    width: 235px;
+    height: 19px;
+    position: absolute;
+    text-align: left;
+  }
+
+  .welcome-part3-center-block {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+  }
