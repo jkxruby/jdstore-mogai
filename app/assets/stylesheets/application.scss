@@ -258,3 +258,77 @@
  .input-group {
     left: 13px;//搜索栏距离左边距离
   }
+
+
+/*  welcome#index中我们优势  */
+  //共同部分，短线
+
+  .welcome-short-line {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    top: 11%;
+    z-index: 53;
+    width: 70px;
+    height: 2px;
+    position: relative;
+    background: #448AFF;
+    border-style: none;
+    border-radius: 0;
+  }
+  /* 第一部分
+  */
+  .welcome-part1-01 {
+    //display: block;没有作用
+  margin: -80px -30px 80px -30px;
+
+    height: 550px;
+    background-size: cover;
+    background: #ececec;
+  }
+  //定义了划分三块
+
+  .welcome-part1-01 .welcome-part1-block {
+    display: block;
+    width: 960px;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .welcome-part1-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 12%;
+    z-index: 52;
+    width: auto;
+    height: auto;
+    position: relative;
+    color: #448AFF;
+    font-weight: bold;
+    text-align: center;
+  }
+  //定义了划分三块中的一块
+
+  .welcome-part1-01-box {
+    display: block;
+    border-style: none;
+    border-radius: 0;
+    z-index: 38;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 40px;
+    float: left;
+  }
+
+  .welcome-part1-01-title {
+    color: #448AFF;
+    font-weight: bold;
+    text-align: center;
+  }
