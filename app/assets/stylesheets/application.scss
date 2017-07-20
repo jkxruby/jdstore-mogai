@@ -432,3 +432,10 @@
 height: 120px;
 
 }
+
+/*  增加鼠标停留在navbar文字上的变色效果 */
+
+ .navbar-default .navbar-nav > li > a:hover,
+ .navbar-default .navbar-nav > li > a:focus {
+     color: red;
+ }
