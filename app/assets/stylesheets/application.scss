@@ -13,22 +13,16 @@
  *= require_tree .
  *= require_self
  */
-
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
-
-
-
-
 /*  welcome首页设计  */
-
- .container-fluid .jumbotron {
-  background-image: url('head.jpg');   //大图链接
+.container-fluid .jumbotron {
+  background-image: url('head.jpg');
+  //大图链接
   background-repeat: no-repeat;
-  margin: -120px -30px 80px -31px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
-  border-radius: 0;//圆角为0
+  margin: -120px -30px 80px -31px; //顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+  border-radius: 0; //圆角为0
   background-size: cover;
   border-radius: 10;
   padding-bottom: 110px;
@@ -36,12 +30,9 @@
 
 .title {
   font-family: "Helvetica Neue", "Microsoft Yahei",微软雅黑;
-
   text-align: center;
-
   margin-top: 200px;
   margin-bottom: 80px;
-
 }
 
 .slogan {
@@ -49,96 +40,92 @@
   margin-bottom: 50px;
   text-align: center;
   color: white;
-    top: 12px;
-  }
+  top: 12px;
+}
 
-  .lead {
-    margin-bottom: 60px;
-    text-align: center;
-    color: white;
-  }
-
-
-
+.lead {
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+}
 //替换按钮
- .btn-danger {
-     color: #fff;//字体颜色
 
-     background-color: #EF6C00;//背景颜色
+.btn-danger {
+  color: #fff; //字体颜色
+  background-color: #EF6C00; //背景颜色
+  border-color: #EF6C00; //边框颜色
+}
 
-     border-color: #EF6C00;//边框颜色
+.btn-danger:hover {
+  background-color: #red; //鼠标放置在btn上的背景颜色
+  border-color: #white; //鼠标放置在btn上的边框颜色
+}
+// common navbar
 
- }
+.navbar-default {
+  margin-bottom: 0;
+  border-radius: 0;
+  background: rgba(34,112,232,0.5);
 
- .btn-danger:hover {
-     background-color: #red;//鼠标放置在btn上的背景颜色
-
-     border-color: #white;//鼠标放置在btn上的边框颜色
-
- }
-
-
-
- // common navbar
- .navbar-default {
-   margin-bottom: 0;
-   border-radius: 0;
-   background: rgba(34,112,232,0.5);
-   &.show_bgcolor {
-     background-color: rgba(61,61,61,0.3);
-
-   }
-     .navbar-header {
-       margin-left: 4%;
-       a {
-         font-size: 20px;
-         color: #fff;
-         transition: 0.35s;
-       }
-       a:hover {
-         color: #D0CFCE;
-       }
-     }
-     .navbar-nav li a {
-       color: #fff;
-       font-size: 16px;
-       transition: 0.35s;
-     }
-     .navbar-nav li a:hover {
-       color: #D0CFCE;
-       text-decoration: none
-     }
-
-     .navbar-nav .dropdown-menu {
-       padding-bottom: 0;
-       padding-top: 0;
-       a {
-         text-align: center;
-         color: #000;
-       }
-       li.divider:last-child {
-         display: none;
-       }
-     }
-
+  &.show_bgcolor {
+    background-color: rgba(61,61,61,0.3);
   }
 
+  .navbar-header {
+    margin-left: 4%;
 
+    a {
+      font-size: 20px;
+      color: #fff;
+      transition: 0.35s;
+    }
+
+    a:hover {
+      color: #D0CFCE;
+    }
+  }
+
+  .navbar-nav li a {
+    color: #fff;
+    font-size: 16px;
+    transition: 0.35s;
+  }
+
+  .navbar-nav li a:hover {
+    color: #D0CFCE;
+    text-decoration: none;
+  }
+
+  .navbar-nav .dropdown-menu {
+    padding-bottom: 0;
+    padding-top: 0;
+
+    a {
+      text-align: center;
+      color: #000;
+    }
+
+    li.divider:last-child {
+      display: none;
+    }
+  }
+}
 /* login/sign-up */
- .facepanel{
-
+.facepanel {
   background-color: lightgrey;
   background-size: cover;
-  margin:-120px -30px -150px -31px;
-  margin-bottom: -150px;
+  margin: -120px -30px -150px -31px;
 
-  .login-page, .sign-up-page {
+  .login-page,
+  .sign-up-page {
     margin-top: 120px;
     margin-bottom: 80px;
+
     span {
       display: inline-block;
       margin-right: 15px;
     }
+
     form {
       max-width: 480px;
       padding: 15px 35px 45px;
@@ -147,9 +134,11 @@
       border: 1px solid rgba(0,0,0,0.1);
       border-radius: 5px;
       box-shadow: inset 0 1px 1px #9daaaf, 0 0 8px #c1c5c1;
+
       h2 {
         margin-bottom: 30px;
       }
+
       .form-control {
         position: relative;
         font-size: 16px;
@@ -157,6 +146,7 @@
         padding: 10px;
         transition: 1s;
         @include box-sizing(border-box);
+
         &:focus {
           box-shadow: 1px 1px #fff;
           border-color: #red;
@@ -164,278 +154,256 @@
         }
       }
     }
-
   }
 }
-
-
-
-
-
 /* 美化导航栏搜索*/
-
 .search-info-title {
   font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
   color: #0d6ded;
   font-size: 20px;
   text-align: center;
 }
- .navbar-left {
-    float: initial;
-     margin-top: 8px; //调整导航条上搜索框上下的距离
-    width: 200px; //调整搜索框的长度
- }
 
- .search-id {
-    width: 200px;
-    padding-top: 7px;
- }
-
- .page-wrap {
-    margin-top: 50px;//搜索页面距离顶部的距离
- }
-
- .input-group {
-    left: 13px;//搜索栏距离左边距离
-  }
-
-
-/*  welcome#index中我们优势  */
-
-  .welcome-short-line {  //中间横线
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    top: 11%;
-    z-index: 53;
-    width: 70px;
-    height: 2px;
-    position: relative;
-    background: #448AFF;
-    border-style: none;
-    border-radius: 0;
-  }
-  /* 第一部分
-  */
-  .welcome-part1-01 {
-    //display: block;没有作用
-  margin: -80px -30px 80px -30px;
-
-    height: 550px;
-    background-size: cover;
-    background: #ececec;
-  }
-
-  .welcome-part1-01 .welcome-part1-block {
-    display: block;
-    width: 960px;
-    height: 450px;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    padding-top: 60px;
-  }
-
-  .welcome-part1-title {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    top: 12%;
-    z-index: 52;
-    width: auto;
-    height: auto;
-    position: relative;
-    color: #448AFF;
-    font-weight: bold;
-    text-align: center;
-  }
-  //定义了划分三块中的一块
-
-  .welcome-part1-01-box {
-    display: block;
-    border-style: none;
-    border-radius: 0;
-    z-index: 38;
-    width: 300px;
-    height: 200px;
-    position: relative;
-    margin-left: 20px;
-    margin-top: 40px;
-    float: left;
-
-  }
-
-  .welcome-part1-01-title {
-    color: #448AFF;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  /* 客户反馈 */
-
-  .welcome-part3 {
-    display: block;
-    margin: -80px -30px 80px -30px;
-    height: 630px;
-    min-width: 960px;
-    background-size: cover;
-    background: #ececec;
-  }
-
-  .welcome-part3-box {
-    display: block;
-    background: white;
-    border-style: none;
-    border-radius: 0;
-    top: 20%;
-    z-index: 38;
-    width: 300px;
-    height: 330px;
-    position: relative;
-    margin-left: 20px;
-    float: left;
-  }
-
-  .welcome-part3-text1 {
-    display: block;
-    font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
-    background: rgba(255, 255, 255, 0);
-    border-style: none;
-    border-radius: 0;
-    left: 32px;
-    top: 81px;
-    width: 235px;
-    height: 78px;
-    position: absolute;
-    text-align: left;
-  }
-
-  .welcome-quote-image {
-    display: block;
-    background: rgba(255, 255, 255, 0);
-    left: 32px;
-    top: 41px;
-    z-index: 49;
-    position: absolute;
-  }
-
-  .welcome-part3-box-image {
-    display: block;
-    background: rgba(255, 255, 255, 0);
-    background-image: url("http://imglf1.ph.126.net/gb9DEw_k_RHc2FKBkBYyrQ==/6619555878956744632.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    border-style: none;
-    border-radius: 146px;
-    left: 32px;
-    top: 180px;
-    z-index: 47;
-    width: 70px;
-    height: 70px;
-    position: absolute;
-  }
-
-  .welcome-part3-text2 {
-    display: block;
-    background: rgba(255, 255, 255, 0);
-    border-style: none;
-    border-radius: 0;
-    left: 32px;
-    top: 256px;
-    z-index: 46;
-    width: 87px;
-    height: 26px;
-    position: absolute;
-    text-align: left;
-  }
-
-  .welcome-part3-text3 {
-    display: block;
-    background: rgba(255, 255, 255, 0);
-    border-style: none;
-    border-radius: 0;
-    left: 32px;
-    top: 276px;
-    z-index: 45;
-    width: 235px;
-    height: 19px;
-    position: absolute;
-    text-align: left;
-  }
-
-  .welcome-part3-center-block {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 600px;
-  }
-
-
-  /*  马上购买section*/
-  .block-submit-last {
-    display: block;
-    background: #1696fb;
-    background-image: url('head.jpg');
-    border-style: none;
-    margin: -80px -30px 0px -30px;
-    border-radius: 0;
-
-    height: 400px;
-    position: relative;
-    text-align: center;
-    padding: 60px;
-    color: white;
-    top: 2px;
-    letter-spacing: 5px;
-  }
-  //圆按键
-
-  .round-submit-1 .round-submit-button {
-    border-radius: 25px;
-    background: transparent;
-    display: inline-block;
-    border: 2px solid #fff;
-    color: #fff;
-    line-height: 1;
-    text-align: center;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 14px 37px 13px;
-    margin-right: 10px;
-    margin-top: 20px;
-  }
-
-  /*页脚*/
-  .foot {
-    font-family: PingFangSC-Medium, Verdana, Geneva, sans-serif;
-    background-color: #202120;
-    text-align: center;
-    color: #7e7e7e;
-    line-height: 60px;
-    height: 60px;
-    margin-left: -15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding-bottom: 0px;
-    z-index: 100;
-  }
-
-
-/*  页面抬头  */
-.row {
-height: 120px;
-
+.navbar-left {
+  float: initial;
+  margin-top: 8px; //调整导航条上搜索框上下的距离
+  width: 200px; //调整搜索框的长度
 }
 
-/*  增加鼠标停留在navbar文字上的变色效果 */
+.search-id {
+  width: 200px;
+  padding-top: 7px;
+}
 
- .navbar-default .navbar-nav > li > a:hover,
- .navbar-default .navbar-nav > li > a:focus {
-     color: red;
- }
+.page-wrap {
+  margin-top: 50px; //搜索页面距离顶部的距离
+}
+
+.input-group {
+  left: 13px; //搜索栏距离左边距离
+}
+/*  welcome#index中我们优势  */
+.welcome-short-line {
+  //中间横线
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  top: 11%;
+  z-index: 53;
+  width: 70px;
+  height: 2px;
+  position: relative;
+  background: #448AFF;
+  border-style: none;
+  border-radius: 0;
+}
+/* 第一部分*/
+.welcome-part1-01 {
+  //display: block;没有作用
+  margin: -80px -30px 80px;
+  height: 550px;
+  background-size: cover;
+  background: #ececec;
+}
+
+.welcome-part1-01 .welcome-part1-block {
+  display: block;
+  width: 960px;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.welcome-part1-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 12%;
+  z-index: 52;
+  width: auto;
+  height: auto;
+  position: relative;
+  color: #448AFF;
+  font-weight: bold;
+  text-align: center;
+}
+//定义了划分三块中的一块
+
+.welcome-part1-01-box {
+  display: block;
+  border-style: none;
+  border-radius: 0;
+  z-index: 38;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 40px;
+  float: left;
+}
+
+.welcome-part1-01-title {
+  color: #448AFF;
+  font-weight: bold;
+  text-align: center;
+}
+     /* 客户反馈 */
+.welcome-part3 {
+  display: block;
+  margin: -80px -30px 80px;
+  height: 630px;
+  min-width: 960px;
+  background-size: cover;
+  background: #ececec;
+}
+
+.welcome-part3-box {
+  display: block;
+  background: white;
+  border-style: none;
+  border-radius: 0;
+  top: 20%;
+  z-index: 38;
+  width: 300px;
+  height: 330px;
+  position: relative;
+  margin-left: 20px;
+  float: left;
+}
+
+.welcome-part3-text1 {
+  display: block;
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+  background: rgba(255, 255, 255, 0);
+  border-style: none;
+  border-radius: 0;
+  left: 32px;
+  top: 81px;
+  width: 235px;
+  height: 78px;
+  position: absolute;
+  text-align: left;
+}
+
+.welcome-quote-image {
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  left: 32px;
+  top: 41px;
+  z-index: 49;
+  position: absolute;
+}
+
+.welcome-part3-box-image {
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  background-image: url("http://imglf1.ph.126.net/gb9DEw_k_RHc2FKBkBYyrQ==/6619555878956744632.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  border-style: none;
+  border-radius: 146px;
+  left: 32px;
+  top: 180px;
+  z-index: 47;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+
+.welcome-part3-text2 {
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  border-style: none;
+  border-radius: 0;
+  left: 32px;
+  top: 256px;
+  z-index: 46;
+  width: 87px;
+  height: 26px;
+  position: absolute;
+  text-align: left;
+}
+
+.welcome-part3-text3 {
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  border-style: none;
+  border-radius: 0;
+  left: 32px;
+  top: 276px;
+  z-index: 45;
+  width: 235px;
+  height: 19px;
+  position: absolute;
+  text-align: left;
+}
+
+.welcome-part3-center-block {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+}
+/*  马上购买section*/
+.block-submit-last {
+  display: block;
+  background: #1696fb;
+  background-image: url('head.jpg');
+  border-style: none;
+  margin: -80px -30px 0;
+  border-radius: 0;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 60px;
+  color: white;
+  top: 2px;
+  letter-spacing: 5px;
+}
+//圆按键
+
+.round-submit-1 .round-submit-button {
+  border-radius: 25px;
+  background: transparent;
+  display: inline-block;
+  border: 2px solid #fff;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px 37px 13px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+/*页脚*/
+.foot {
+  font-family: PingFangSC-Medium, Verdana, Geneva, sans-serif;
+  background-color: #202120;
+  text-align: center;
+  color: #7e7e7e;
+  line-height: 60px;
+  height: 60px;
+  margin-left: -15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 0;
+  z-index: 100;
+}
+/*  页面抬头  */
+.row {
+  height: 120px;
+}
+/*  增加鼠标停留在navbar文字上的变色效果 */
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: red;
+}
