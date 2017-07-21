@@ -1,0 +1,38 @@
+// Place all the styles related to the abouts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* 关于我们页面样式 */
+
+// 标题样式
+.about-title-box {
+  margin-top: -20px;
+  margin-bottom: 20px;
+
+  background:  #CFD8DC;
+
+  height: 90px;
+
+
+}
+.about-title-e {
+  font-weight: lighter;
+  font-size: 2.3em;
+}
+.about-title-c {
+  font-weight: lighter;
+  font-size: 2.5em;
+  letter-spacing: 0.16em;
+  margin: 2px auto 50px;
+}
+
+// 信息样式
+.about-info {
+
+  font-size: 1.1em;
+  letter-spacing: 0.2em;
+  font-weight:normal;
+  line-height: 2em;
+  margin-bottom: 100px;
+  margin-top: 20px
+}

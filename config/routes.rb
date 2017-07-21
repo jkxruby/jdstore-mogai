@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-
+get 'abouts/about'
 
 namespace :admin do
   resources :products
@@ -19,7 +19,7 @@ end
 resources :products do
   collection do
     get :search
-  end 
+  end
   member  do
     post :add_to_cart
   end
@@ -46,6 +46,7 @@ namespace :account do
   resources :users
   resources :orders
 end
+
 
 root 'welcome#index'
 
