@@ -43,6 +43,8 @@ gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 gem 'seo_helper'
 gem 'annotate'
+gem 'carrierwave-qiniu'
+gem 'qiniu-rs'
 
 
 
