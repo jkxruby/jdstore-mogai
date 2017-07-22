@@ -45,6 +45,7 @@ gem 'seo_helper'
 gem 'annotate'
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
+gem 'figaro'
 
 
 
