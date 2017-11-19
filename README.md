@@ -1,24 +1,5 @@
-# README
+### 实战网站
+heroku: https://mujiang1.herokuapp.com/
+![Snip20171119_14.png](https://i.loli.net/2017/11/19/5a1147c43ceb9.png)
+![Snip20171119_15.png](https://i.loli.net/2017/11/19/5a1147a8058e0.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
